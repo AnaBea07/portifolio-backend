@@ -8,7 +8,7 @@ public class Main {
         String[] listaDeFilmes = {"Homens de Preto", "Arrival", "Shrek", "Gladiador"};
         Scanner leitor = new Scanner(System.in);
 
-        System.out.println("Que ambientacao você prefere??");
+        System.out.println("Que ambientação você prefere??");
         System.out.println("1 - sci - fi");
         System.out.println("2 - medieval");
 
