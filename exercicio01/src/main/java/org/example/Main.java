@@ -1,39 +1,42 @@
 package org.example;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        String[] listaDeFilmes = {"Homens de Preto", "Arrival", "Shrek", "Gladiador"};
+        Scanner leitor = new Scanner(System.in);
 
-        /*
-        String[] cores = new String[4];
-        cores[0] = "azul";
-        cores[1] = "verde";
-        cores[2] = "amarelo";
-        cores[3] = "vermelho";
-        cores[4] = "outra cor";
-         */
-        String[] vetorCores = { "azul", "verde", "amarelo", "vermelho" };
+        System.out.println("Que ambientacao você prefere??");
+        System.out.println("1 - sci - fi");
+        System.out.println("2 - medieval");
 
-        while (true) {
-            Scanner leitor = new Scanner(System.in);
+        Integer opcaoAmbientacao = leitor.nextInt();
 
-            System.out.println("Digite o primeiro nome: ");
-            String primeiroNome = leitor.nextLine();
-
-            if (primeiroNome.isEmpty()) return;
-
-            System.out.println("Digite o segundo nome: ");
-            String segundoNome = leitor.nextLine();
-
-            Random geradorAleatorio = new Random();
-            Integer numeroAleatorio = geradorAleatorio.nextInt(10, 100);
-            Integer indiceAlatorio = geradorAleatorio.nextInt(vetorCores.length);
-
-            String cor = vetorCores[indiceAlatorio];
-
-            System.out.println(cor + primeiroNome + segundoNome + numeroAleatorio);
+        if (opcaoAmbientacao != 1 && opcaoAmbientacao != 2) {
+            System.out.println("Resposta inválida!! Escolha 1 ou 2...");
+            return;
         }
+
+        System.out.println("Que genero você prefere??");
+        System.out.println("1 - comedia");
+        System.out.println("2 - drama");
+
+        Integer opcaoGenero = leitor.nextInt();
+
+        if (opcaoGenero != 1 && opcaoGenero != 2) {
+            System.out.println("Resposta inválida!! Escolha 1 ou 2...");
+            return;
+        }
+
+        opcaoAmbientacao = opcaoAmbientacao - 1;
+        opcaoGenero = opcaoGenero - 1;
+
+        int indiceFilme = opcaoAmbientacao * 2 + opcaoGenero;
+        System.out.println(listaDeFilmes[indiceFilme]);
+
+
+
     }
 }
