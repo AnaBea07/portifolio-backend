@@ -1,0 +1,5 @@
+Meirylene Avelino reforçou a importância da cultura de segurança no dia a dia de todas as pessoas como forma de evitar golpes de engenharia social. Elabore pelo menos uma técnica empregada numa API Web que pode evitar com que usuários sejam vítimas de golpes de engenharia social.
+
+A técnica Autenticação Multifator (MFA). Um processo de login que exige mais de uma senha para confirmar a identidade do usuário. Além de ser mais uma camada de segurança, mesmo que o atacante tenha a senha do usuário por Phishing (exemplo de técnica de engenharia social), ainda precisaria da segunda forma de autenticação para acessar a conta.
+
+Phishing: normalmente por e-mails. Aparente ser uma fonte confiável e legítimo, tentam convencer o usuário a fornecer informações pessoais para tirar algum proveito.
